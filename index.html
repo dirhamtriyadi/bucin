@@ -104,6 +104,8 @@
         }
 
         .mywindow {
+            width: 500px;
+            height: 240px;
             background: #ECECEC;
             position: absolute;
             left: calc(50% - 250px);
@@ -112,7 +114,6 @@
             border-radius: 10px;
             border: 1px solid #C6C6C6;
             box-shadow: 0px 0px 10px #00000020;
-
         }
 
         .myanimated {
@@ -476,15 +477,38 @@
             right: 0;
         }
 
-        .mywindow {
-                width: 500px;
-                height: 240px;
-            }
-
         @media only screen and (max-width: 500px) {
             .mywindow {
                 width: 350px;
-                height: 250px;
+                height: 330px;
+                background: #ECECEC;
+                position: absolute;
+                left: calc(50% - 175px);
+                top: calc(50% - 120px);
+                font-size: 12pt;
+                border-radius: 10px;
+                border: 1px solid #C6C6C6;
+                box-shadow: 0px 0px 10px #00000020;
+            }
+
+            .mytext {
+                width: 250px;
+                border-radius: 7px;
+                padding: 5px;
+                margin-left: 10px;
+                box-sizing: border-box;
+                border: 3px solid #dcdcdca0;
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+                outline: none;
+            }
+
+            .mybutton {
+                position: absolute;
+                height: 30px;
+                line-height: 30px;
+                bottom: 20px;
+                right: 20px;
             }
         }
 
@@ -492,6 +516,26 @@
             .mywindow {
                 width: 250px;
                 height: 350px;
+                background: #ECECEC;
+                position: absolute;
+                left: calc(50% - 125px);
+                top: calc(50% - 120px);
+                font-size: 12pt;
+                border-radius: 10px;
+                border: 1px solid #C6C6C6;
+                box-shadow: 0px 0px 10px #00000020;
+            }
+
+            .mytext {
+                width: 200px;
+                border-radius: 7px;
+                padding: 5px;
+                margin-left: 10px;
+                box-sizing: border-box;
+                border: 3px solid #dcdcdca0;
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+                outline: none;
             }
         }
     </style>
