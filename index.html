@@ -475,6 +475,25 @@
         .kanan {
             right: 0;
         }
+
+        .mywindow {
+                width: 500px;
+                height: 240px;
+            }
+
+        @media only screen and (max-width: 500px) {
+            .mywindow {
+                width: 350px;
+                height: 250px;
+            }
+        }
+
+        @media only screen and (max-width: 300px) {
+            .mywindow {
+                width: 250px;
+                height: 350px;
+            }
+        }
     </style>
 </head>
 
@@ -512,7 +531,7 @@
             <div class="shortcut kanan" onclick="toggleFullscreen()">Full screen</div>
             <div class="shortcut kiri" onclick="wpblur()">Blur</div>
         </div>
-        <div class="mywindow" id="myform" style="width: 500px; height: 240px">
+        <div class="mywindow" id="myform">
             <div class="myheader">
                 Registrasi
             </div>
@@ -530,7 +549,7 @@
                 </div>
             </div>
         </div>
-        <div class="mywindow myanimated myhide" id="mywindow" style="width: 500px; height: 240px">
+        <div class="mywindow myanimated myhide" id="mywindow">
             <div class="mycontrol">
                 <div class="myclose" onclick="reverse()"></div>
                 <div class="mymini"></div>
